@@ -32,7 +32,7 @@ import Cast from '@/components/CastList.vue';
   }
 })
 export default class MovieView extends Vue {
-    movie: Partial<Movie> = null;
+    movie: Partial<Movie> = {};
     searchQuery : string = '';
     created() {
         if(this.$route.params.movie){
